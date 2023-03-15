@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPosts } from "../store/actions/postsActions";
-import { getPosts, getLoading, getError } from "../store/selectors/postsSelector";
+import { fetchPosts } from "../redux/actions/postsActions";
+import { getPosts, getLoading, getError } from "../redux/selectors/postsSelector";
 
 function Posts() {
   const posts = useSelector(getPosts);
